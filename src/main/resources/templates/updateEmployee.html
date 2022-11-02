@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Create</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<a th:href="@{/employee}"><button>Back</button></a>
+	<h1>Update Employee</h1>
+	<form action="#" th:action="@{/edit}" th:object="${emp}" method="post">
+		<p>Employee Id: <input type="text" th:field="*{eid}"  readonly/></p>
+		<p>Employee Name: <input type="text" th:field="*{ename}" /></p>
+		<p>Employee Designation: <input type="text" th:field="*{desgn}" /></p>
+		<p><input type="submit" value="Update" /> <input type="reset" value="Reset" /></p>
+	</form>
+</body>
+</html>

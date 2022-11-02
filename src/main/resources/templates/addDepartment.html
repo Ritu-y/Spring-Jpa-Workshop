@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Create</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<a th:href="@{/employee}"><button>Back</button></a>
+	<h1>Add Department</h1>
+	<form action="#" th:action="@{/add}" th:object="${dept}" method="post">
+		<p>Department Id: <input type="text" th:field="*{did}" /></p>
+		<p>Department Name: <input type="text" th:field="*{name}" /></p>
+		<p><input type="submit" value="Create" /> <input type="reset" value="Reset" /></p>
+	</form>
+</body>
+</html>

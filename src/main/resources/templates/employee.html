@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>MIS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<h1>Employee Details</h1>
+	<p th:text=" 'Employee Name: '+${emp.ename}"/>
+	<p th:text=" 'Employee Id: '+${emp.eid}"/>
+	<p th:text=" 'Employee Designation: '+${emp.desgn}"/>
+	<a th:href="@{/employee}"><button>Back</button></a>
+</body>
+</html>
